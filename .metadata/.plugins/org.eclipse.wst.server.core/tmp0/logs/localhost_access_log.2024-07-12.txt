@@ -1,0 +1,13 @@
+127.0.0.1 - - [12/Jul/2024:15:32:13 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:32:13 -0400] "GET /ServletLauncher/ServletApp HTTP/1.1" 405 752
+127.0.0.1 - - [12/Jul/2024:15:33:17 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:33:18 -0400] "GET /ServletLauncher/ServletApp HTTP/1.1" 405 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:33:32 -0400] "GET /ServletLauncher/ServletApp HTTP/1.1" 405 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:33:32 -0400] "GET /favicon.ico HTTP/1.1" 404 763
+127.0.0.1 - - [12/Jul/2024:15:37:50 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:37:50 -0400] "GET /ServletLauncher/ServletApp HTTP/1.1" 405 752
+127.0.0.1 - - [12/Jul/2024:15:38:15 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:38:15 -0400] "GET /ServletLauncher/ServletApp HTTP/1.1" 405 752
+127.0.0.1 - - [12/Jul/2024:15:39:51 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:39:51 -0400] "GET /ServletLauncher/index.html HTTP/1.1" 200 584
+0:0:0:0:0:0:0:1 - - [12/Jul/2024:15:39:57 -0400] "POST /ServletLauncher/ServletApp HTTP/1.1" 200 -

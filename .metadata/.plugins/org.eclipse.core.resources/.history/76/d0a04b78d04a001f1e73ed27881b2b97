@@ -1,0 +1,56 @@
+<%-- 
+  	JSP is an extension of servlet where is has the capabilities of html and can also handle the code in a servlet.
+  	The entire JSP code will be converted to servlet and get executed by Tomcat server so it is very slow 
+  	
+  	In real world we use servlet to handle the client requests and JSP for view pages.
+  	
+  		Make sure to add jsp file path in HTML action along with extension
+--%>
+
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP Web App</title>
+</head>
+<body>
+<h1> JSP Web APp to generate Dynamic Response </h1>
+
+<%-- 
+  	We have to use <% %> known as scriptlet tag  
+  	Whatever we write in the body of scriptlet tag it will be considered as the body of the service method and we don't
+  	create a service method or request, response objects.
+  	In the back end, the code will be converted as a servlet and get executed.
+  	To print the response back to the client, we use the out method.
+  
+ 	 We can use <%! %> declaration tag to declare an instance variable or method.
+ 	 
+ 	 Tag to import anything we use directive tag <%@ %>
+ 	 
+ 	 We have expression tag to print anything <%= %>
+--%>
+
+<%! 
+int age =25;
+
+%>
+
+<%@
+	page import="java.util.Date"
+ %>
+
+<%
+String city = request.getParameter("ucity");
+String name = request.getParameter("uname");
+Date date = new Date();
+out.println("Hello "+ name);
+out.println("I know you are from " + city);
+%>
+
+<h1><%= date %> </h1>
+
+</body>
+</html>

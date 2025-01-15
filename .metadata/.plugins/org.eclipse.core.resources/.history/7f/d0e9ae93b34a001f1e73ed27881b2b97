@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ServletLauncher6ServletJSP">
+        <property name="context-root" value="ServletLauncher6ServletJSP"/>
+    </wb-module>
+</project-modules>
