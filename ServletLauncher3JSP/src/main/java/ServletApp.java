@@ -8,12 +8,14 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Servlet implementation class ServletApp
- */
-// We can directly respond back to the client using PrintWriter object but it is not recommended. Servlet is a controller, it receives http requests 
-		// and will decide which file to execute
-// 
+
+/* We can directly respond back to the client using PrintWriter object but it is not recommended. Servlet is a controller, it receives http requests 
+		 and will decide which file to execute*/
+
+/* We can also use HTML file or JSP file to respond back but
+	In the below servlet we will respond back using JSP file as it act's as a HTML file and also 
+	we can pass the data from servlet to JSP file.
+	*/
 public class ServletApp extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
