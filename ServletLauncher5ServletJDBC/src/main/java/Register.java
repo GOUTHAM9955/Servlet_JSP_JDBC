@@ -19,6 +19,9 @@ import java.sql.SQLException;
 //Prerequisites
 	// Add mySQL jar file to Classpath
 	// WE NEED TO ADD IT TO DEPLOYMENT ASSEMBLY(WEB DA since it need to accessed by server) ALSO AS IT IS WEB APPLICATION
+
+// The below is not recommended as in the same request we are connecting receiving the HTTP request connecting to DB and
+	// responding back. The concept of MVC came into picture to avoid this.
 public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
