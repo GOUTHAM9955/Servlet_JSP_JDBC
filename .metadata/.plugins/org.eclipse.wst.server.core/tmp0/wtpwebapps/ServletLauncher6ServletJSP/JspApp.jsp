@@ -39,7 +39,29 @@
  	 
  	 Tag to import anything we use directive tag <%@ %>
  	 
- 	 We have expression tag to print anything <%= %>
+ 	 We have expression tag to print anything out instead of using out object <%= %>
+ 	 
+ 	 During mapping of JSP file we have to use extension unlike for servlets
+--%>
+
+<%--
+	JSP is a server-side technology that dynamically generates content for the client-side to render.
+	 It does not execute any logic on the client side but can produce content that drives client-side functionality 
+	
+	JSP files are processed on the server before being sent to the client. The server translates JSP into a servlet (Java class), 
+	which generates dynamic HTML or other content. 
+--%>
+
+<%--
+Remember that we can also pass data using  session object it servlet but as a standard industry practice we 
+use JSP for view pages and servlet as controller--%>
+
+<%-- 
+SERVLET VS JSP
+
+>> Servlet is written in JAVA where as JSP is HTML tag based
+>> Servlet is faster as JSP should be converted to servlet and run by web container
+>> We don't need to redeploy our application if we made any changes to JSP file
 --%>
 
 <%! 
@@ -55,6 +77,8 @@ int age =25;
 String city = request.getParameter("ucity");
 String name = request.getParameter("uname");
 Date date = new Date();
+
+// The reference variable for writer object is out
 out.println("Hello "+ name);
 out.println("I know you are from " + city);
 %>
